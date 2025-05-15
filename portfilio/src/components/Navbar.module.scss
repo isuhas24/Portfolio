@@ -1,0 +1,32 @@
+@import '../variables.modules.scss';
+
+.nav{
+    transition: all 400ms;
+    z-index: 1;
+}
+
+.dark{
+    background-color: $dark;
+}
+
+.light {
+    background-color: $white;
+}
+
+.active {
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+}
+
+.listItem {
+    transition: $transition;
+  
+    &:hover {
+      transform: translateY(-3px);
+      transition: $transition;
+    }
+}
+  
+.link:hover {
+    color: unset;
+}
