@@ -21,7 +21,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Front-end Developer at Valtech"
+            text: "Software Engineer 1 at Cygeniq India"
         },
         {
             emoji: "📧",
@@ -40,11 +40,11 @@ export const info = {
             label: 'linkedin'
         }
     ],
-    bio: "Hello! I'm Suhas. I'm a Front-end Developer @ Valtech. I studied CompSci at Dr. Ambedkar Institute of Technology, I turn clean code into smooth experiences and pixels into purpose, and now I spend my days crafting sleek, fast, and user-focused interfaces. I obsess over the little details so users don’t have to — and I love building the web to feel as good as it looks.",
+    bio: "Hello! I'm Suhas. I'm a Software Engineer 1 @ Cygneiq. I studied CompSci at Dr. Ambedkar Institute of Technology, I turn clean code into smooth experiences and pixels into purpose, and now I spend my days crafting sleek, fast, and user-focused interfaces. I obsess over the little details so users don’t have to — and I love building the web to feel as good as it looks.",
     skills:
         {
             proficientWith: ['Javascript', 'Typescript', 'React', 'NextJS', 'Git', 'SCSS', 'Material UI', 'Html5', 'Css3', 'AWS', 'Contentful CMS', 'Contentstack CMS', "REST Api's"],
-            exposedTo: ['Nodejs', 'VueJS', 'NuxtJS', 'Figma', 'React Native', 'GraphQL']
+            exposedTo: ['Nodejs', 'VueJS', 'NuxtJS', 'Figma', 'React Native', 'GraphQL', 'MongoDB', 'ArangoDB', 'Keycloak']
         }
     ,
     hobbies: [
