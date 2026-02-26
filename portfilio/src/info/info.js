@@ -41,12 +41,48 @@ export const info = {
         }
     ],
     bio: "Hello! I'm Suhas. I'm a Software Engineer 1 @ Cygneiq. I studied CompSci at Dr. Ambedkar Institute of Technology, I turn clean code into smooth experiences and pixels into purpose, and now I spend my days crafting sleek, fast, and user-focused interfaces. I obsess over the little details so users don’t have to — and I love building the web to feel as good as it looks.",
-    skills:
-        {
-            proficientWith: ['Javascript', 'Typescript', 'React', 'NextJS', 'Git', 'SCSS', 'Material UI', 'Html5', 'Css3', 'AWS', 'Contentful CMS', 'Contentstack CMS', "REST Api's"],
-            exposedTo: ['Nodejs', 'VueJS', 'NuxtJS', 'Figma', 'React Native', 'GraphQL', 'MongoDB', 'ArangoDB', 'Keycloak']
-        }
-    ,
+    skills: {
+        frontend: [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "ReactJS",
+            "NextJS",
+            "Chakra UI",
+            "Material UI",
+            "Styled Components",
+            "React Query"
+        ],
+        backend: [
+            "NodeJS",
+            "NextJS API Routes",
+            "REST APIs"
+        ],
+        databases: [
+            "MongoDB",
+            "PostgreSQL",
+            "ArangoDB"
+        ],
+        dataEngineering: [
+            "Apache NiFi",
+            "ETL Pipelines",
+            "Data Modeling",
+            "Power BI",
+            "Embedded Analytics"
+        ],
+        cloud: [
+            "AWS Core Services"
+        ],
+        tools: [
+            "Git",
+            "Figma",
+            "Keycloak",
+            "Contentful CMS",
+            "Contentstack CMS"
+        ]
+    },
     hobbies: [
         {
             label: 'advocating for sustainability & climate action',

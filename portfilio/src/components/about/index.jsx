@@ -14,7 +14,7 @@ export default function About({innerRef}){
                 >
                     {firstName}{info.lastName.toLowerCase()} $
                 </span> cat 
-                about{firstName} 
+                about {firstName} 
             </p>
             <p className={Style.p}>
                 <span
@@ -26,22 +26,51 @@ export default function About({innerRef}){
     }   
 
     function skillsText() {
-        return <>
-            <p className={Style.p}><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools</p>
-            <p className={Style.p}><span style={{color: info.baseColor}}>skills/tools <span className={Style.green}>(main)</span> $</span> ls</p>
-            <p className={Style.p} style={{color: info.baseColor}}> Proficient With</p>
-            <ul
-                className={Style.skills}
-            >
-                {info.skills.proficientWith.map((proficiency, index) => <li className={Style.li} key={index}>{proficiency}</li>)}
-            </ul>
-            <p className={Style.p} style={{color: info.baseColor}}> Exposed To</p>
-            <ul
-                className={Style.skills}
-            >
-                {info.skills.exposedTo.map((skill, index) => <li className={Style.li} key={index}>{skill}</li>)}
-            </ul>
-        </>
+        const skillCategories = [
+            { label: "Frontend", key: "frontend" },
+            { label: "Backend", key: "backend" },
+            { label: "Databases", key: "databases" },
+            { label: "Data Engineering & BI", key: "dataEngineering" },
+            { label: "Cloud", key: "cloud" },
+            { label: "Tools", key: "tools" }
+        ];
+
+        return (
+            <>
+                <p className={Style.p}>
+                    <span style={{ color: info.baseColor }}>
+                        {firstName}{info.lastName.toLowerCase()} $
+                    </span> cd skills
+                </p>
+
+                <p className={Style.p}>
+                    <span style={{ color: info.baseColor }}>
+                        skills <span className={Style.green}>(main)</span> $
+                    </span> ls
+                </p>
+
+                {skillCategories.map((category, index) => (
+                    info.skills[category.key] && (
+                        <div key={index}>
+                            <p
+                                className={Style.p}
+                                style={{ color: info.baseColor, marginTop: "1rem" }}
+                            >
+                                {category.label}
+                            </p>
+
+                            <ul className={Style.skills}>
+                                {info.skills[category.key].map((skill, i) => (
+                                    <li className={Style.li} key={i}>
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )
+                ))}
+            </>
+        );
     }
 
     function miscText() {
